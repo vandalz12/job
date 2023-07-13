@@ -1,0 +1,16 @@
+server:
+  port: 8080
+spring:
+  security:
+    oauth2:
+      resourceserver:
+        jwt:
+          issuerUri: http://localhost:8081
+          jwkSetUri: http://localhost:8081/oauth2/jwks
+#        opaquetoken:
+#          introspectionUri: http://localhost:8081/oauth2/introspect
+#          clientId: "dans-client"
+#          clientSecret: "dans-secret"
+app:
+  dans:
+    base-url-api: http://dev3.dansmultipro.co.id/api
